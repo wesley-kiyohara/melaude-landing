@@ -23,3 +23,30 @@ body {
   box-sizing: border-box;
   min-height: 100%;
 }
+
+/**/
+.page-header{
+  background: url('/images/bg-1920x1080-medium.jpg') no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.row.melaude-info{
+  margin: 0 auto;
+  width: 60%;
+}
+
+.row.button{
+  margin: 0 auto;
+  width: 40%;
+}
+
+.bottom{
+  background-color: gray;
+}
+.feedback{
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  color: #fff;
+}
