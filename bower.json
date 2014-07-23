@@ -1,0 +1,9 @@
+{
+  "name": "melaude-landing",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "jquery": "latest"
+  },
+  "dependencies": {}
+}
