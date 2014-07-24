@@ -30,7 +30,8 @@ div.page-header{
   background-size: cover;
   color: #fff;
   min-height: 70%;
-  margin: 0 0 20px;
+  margin:0;
+  border: none;
 }
 
 span, div a{
@@ -38,27 +39,26 @@ span, div a{
 }
 
 .header-content h2{
+  margin: 0;
   font-size: 24px;
+  color: #fff;
 }
 .row.melaude-info, .melaude-header{
   font-family: 'Dosis', sans-serif;
   margin: 0 auto;
-  width: 60%;
-}
-
-.header-content h2{
-  margin:0;
-  border-radius: 3px;
+  width: 75%;
 }
 
 .header-content{
+  border-radius: 3px;
+  color: #c6c6cf;
   background-color:rgba(80,80,80,0.2);
   padding: 50px 30px;
 }
 
-#neighborhood{
+#around-the-world{
   color: #fff;
-  border-bottom: 2.5px solid;
+  border-bottom: 3px solid;
   border-color: #2ec2bd;
 }
 
@@ -71,19 +71,47 @@ input, button{
   background-color: transparent;
   border: solid 1px #fff;
   margin-right: 30px;
+  color: #fff;
+}
+
+.bar{
+  background-color: #2ec2bd;
+  width: 100%;
+  height: 10px;
+  margin: 0 0 100px;
 }
 
 .row.melaude-info{
   text-align: center;
 }
 
+.description{
+  margin-bottom: 60px;
+  font-size: 25px;
+}
 .features h4{
   color: #4b4c54;
 }
 .features{
+  margin-bottom: 60px;
+  color: #747684;
+}
+div.feature-inner{
+  width:96%;
   border: 1px solid #e8e8eb;
+  border-radius: 3px;
+  height: 280px;
+  padding: 30px 10px;
+}
+/*
+#globabl-audtions, #talent-scouting{
+  margin-right: 1px;
 }
 
+#talent-scouting, #match-recommendations{
+  margin-left: 1px;
+}
+*/
 div button{
   color: #fff;
   border: none;
@@ -93,6 +121,7 @@ div button{
 .bottom{
   font-family: 'Dosis', sans-serif;
   background-color: #4b4c54;
+  margin-top: 100px;
 }
 .feedback{
   margin: 0 auto;
@@ -100,6 +129,14 @@ div button{
   text-align: center;
   color: #fff;
 }
+.hello{
+  margin-top: 50px;
+}
+.press{
+  margin: 50px 0 25px;
+}
 small{
   display: block;
+  color: #ababad;
+  margin: 25px 0;
 }
