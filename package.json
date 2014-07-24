@@ -3,8 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "express": "latest"
+    "express": "latest",
+    "bower": "latest"
   },
   "devDependencies": {
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
   }
 }
