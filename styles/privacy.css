@@ -1,0 +1,28 @@
+body{
+	font-family: 'Dosis', sans-serif;
+	color: #747684;
+	width: 80%;
+	margin: 0 auto;
+	font-weight: 400;
+}
+h1{
+	font-weight: normal;
+	font-size: 3em;
+}
+h2{
+	font-weight: 400;
+	color: #82828d;
+}
+
+h4{
+	font-weight: 600;
+}
+
+li p{
+	margin-left: 40px;
+}
+
+a{
+	color: #2ec2bd;
+	text-decoration: none;
+}
