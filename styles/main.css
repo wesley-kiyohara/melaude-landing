@@ -108,15 +108,7 @@ div.feature-inner{
   height: 280px;
   padding: 30px 10px;
 }
-/*
-#globabl-audtions, #talent-scouting{
-  margin-right: 1px;
-}
 
-#talent-scouting, #match-recommendations{
-  margin-left: 1px;
-}
-*/
 div button{
   color: #fff;
   border: none;
@@ -143,5 +135,5 @@ div button{
 small{
   display: block;
   color: #ababad;
-  margin: 25px 0;
+  margin: 25px 0 0;
 }
