@@ -4,7 +4,11 @@
   "private": true,
   "dependencies": {
     "express": "latest",
-    "bower": "latest"
+    "bower": "latest",
+    "mongoose": "latest",
+    "body-parser": "latest",
+    "lodash": "latest",
+    "express-validator": "latest"
   },
   "devDependencies": {
   },

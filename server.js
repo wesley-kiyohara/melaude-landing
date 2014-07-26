@@ -1,17 +1,41 @@
-var express = require('express');
-var http = require('http');
+/**
+ * TODO Pull middleware to a separate module.
+ */
 
-var app = express(); 
-var server = http.createServer(app);
-var port = parseInt(process.env.PORT, 10) || 8000;
+var express = require('express'),
+    mongoose = require('mongoose'),
+    bodyParser = require('body-parser'),
+    expressValidator = require('express-validator'),
+    config = require('./server/config/config')
+    ;
 
-app.get("/", function (req, res) {
-  res.redirect("index.html");
-});
+// Initialize express app.
+var app = express();
 
+// Tell mongoose to connect with the MongoHQ database.
+mongoose.connect(config.db);
+
+// Used to support json-encoded request bodies.
+app.use(bodyParser.json());
+
+// Used to support URL-encoded request bodies.
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+
+// Tell express to use the "expressValidator" as middleware.
+// This allows you to make assertions for requests.
+// NOTE Make sure to keep this immediately after bodyParser.
+app.use(expressValidator());
+
+// Node will automatically look for a file named "index.js".
+var routes = require('./server/routes')(app);
+
+// Set the default path of static files.
 app.use(express.static(__dirname));
 
-app.listen(port);
+// Let er' rip
+app.listen(config.port, config.hostname);
 
-console.log('Express server started on port %s\n', 8000);
+console.log('Express server started on port ' + config.port + '\n');
 console.log('Press Ctrl + C to stop.');

@@ -21,8 +21,8 @@
                     <h2>FIND MUSICIANS <span>&amp</span> AUDITION FOR BANDS <span id="message">IN YOUR NEIGHBORHOOD</span></h2>
                         <span>get first access to the beta launch</span>
                     <div>
-                        <form novalidate>
-                            <input type="email" placeholder="your@email.com"/><button type="submit">JOIN THE LIST</button>
+                        <form id="leadForm" method="POST" action="/lead" novalidate>
+                            <input id="leadEmail" type="email" name="email" placeholder="your@email.com"/><button type="submit">JOIN THE LIST</button>
                         </form>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
         </div>
     </div>
     <!--Scripts-->
-    <script src="scripts/main.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
     </body>
 </html>
