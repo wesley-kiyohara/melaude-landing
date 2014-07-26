@@ -176,15 +176,29 @@ button:hover{
     -o-transition: 0.5s ease;
 }
 
-/*-----media queries (aka the devil)-----*/
+/*-----media queries-----*/
+@media only screen and (max-width: 541px){
+    form input{
+        margin-bottom: 20px;
+    }
+}
+
 @media only screen and (max-width: 400px){
     div.feature-inner{
         height: 360px;
     }
+
+    .melaude-header h1{
+        margin: 90px 0 60px 20px;
+    }
+
+    .header-content{
+        padding: 50px 50px 50px 30px;
+    }
 }
 
-@media only screen and (max-width: 541px){
-    form input{
-        margin-bottom: 20px;
+@media only screen and (max-width: 360px){
+    div.feature-inner{
+        height: 320px;
     }
 }
