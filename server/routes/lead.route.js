@@ -35,7 +35,7 @@ module.exports = function(app) {
             }
             else {
 
-                // Sent a response of all errors.
+                // Send a response of all errors.
                 res.json({ errors: errors });
             }
         });

@@ -32,7 +32,7 @@ app.use(expressValidator());
 var routes = require('./server/routes')(app);
 
 // Set the default path of static files.
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + '/public'));
 
 // Let er' rip
 app.listen(config.port, config.hostname);
