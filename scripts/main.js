@@ -28,7 +28,7 @@
 			$('#message').text('ACROSS THE COUNTRY');
 			message = 2;
 		}else{
-			$('#message').text('IN WESMOY\'S BUTT');
+			$('#message').text('AROUND THE WORLD');
 			message = 0;
 		}
 	}, 3000);
