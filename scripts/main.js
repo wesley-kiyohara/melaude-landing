@@ -18,17 +18,17 @@
  */
 (function () {
 	'use strict';
-	var message = 0;
+	var message = 1;
 	setInterval(function(){
 		if (message === 0){
 			$('#message').text('IN YOUR NEIGHBORHOOD');
-			message++;
+			message = 1;
 		}
-		if (message === 1){
+		else if (message === 1){
 			$('#message').text('ACROSS THE COUNTRY');
-			message++;
+			message = 2;
 		}else{
-			$('#message').text('AROUND THE WORLD');
+			$('#message').text('IN WESMOY\'S BUTT');
 			message = 0;
 		}
 	}, 3000);

@@ -44,7 +44,7 @@ span, .header-content h2 span, div a{
 }
 
 .header-content h2{
-  margin: 0;
+  margin-bottom: 15px;
   font-size: 28px;
   color: #fff;
   font-weight: 600;
@@ -72,6 +72,7 @@ span, .header-content h2 span, div a{
 .header-content span{
   color: #c6c6cf;
   font-weight: 600;
+  line-height: 1.3em;
 }
 
 input, button{
