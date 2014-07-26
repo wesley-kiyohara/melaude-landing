@@ -136,3 +136,21 @@ small{
   color: #ababad;
   margin: 25px 0 0;
 }
+
+small a{
+  color: #ababad;
+}
+
+
+/*-----FX------*/
+a:visited{
+  color: #2ec2bd;
+}
+
+small a:visited{
+  color: #ababad;
+}
+
+button:hover{
+  background-color: #ff8f79;
+}
