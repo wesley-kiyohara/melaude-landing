@@ -17,7 +17,19 @@
  *
  */
 (function () {
-  'use strict';
-
-  
+	'use strict';
+	var message = 0;
+	setInterval(function(){
+		if (message === 0){
+			$('#message').text('IN YOUR NEIGHBORHOOD');
+			message++;
+		}
+		if (message === 1){
+			$('#message').text('ACROSS THE COUNTRY');
+			message++;
+		}else{
+			$('#message').text('AROUND THE WORLD');
+			message = 0;
+		}
+	}, 3000);
 })();

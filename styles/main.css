@@ -63,7 +63,7 @@ span, .header-content h2 span, div a{
   padding: 50px 30px 50px 40px;
 }
 
-#around-the-world{
+#message{
   color: #fff;
   border-bottom: 3px solid;
   border-color: #2ec2bd;
@@ -143,7 +143,7 @@ div button{
   
 }
 .press{
-  margin: 15px 0 50px;
+  margin: 15px 0 40px;
 }
 small{
   display: block;
