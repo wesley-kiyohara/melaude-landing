@@ -26,7 +26,7 @@ body {
 /**/
 .melaude-header h1{
   font-size: 48px;
-  margin: 90px 0 60px 32px;
+  margin: 90px 0 60px 42px;
 }
 
 div.page-header{
@@ -39,15 +39,17 @@ div.page-header{
   border: none;
 }
 
-span, div a{
+span, .header-content h2 span, div a{
   color: #2ec2bd;
 }
 
 .header-content h2{
   margin: 0;
-  font-size: 32px;
+  font-size: 28px;
   color: #fff;
+  font-weight: 600;
 }
+
 .row.melaude-info, .melaude-header{
   font-family: 'Dosis', sans-serif;
   margin: 0 auto;
@@ -58,13 +60,18 @@ span, div a{
   border-radius: 3px;
   color: #c6c6cf;
   background-color:rgba(80,80,80,0.2);
-  padding: 50px 30px;
+  padding: 50px 30px 50px 40px;
 }
 
 #around-the-world{
   color: #fff;
   border-bottom: 3px solid;
   border-color: #2ec2bd;
+}
+
+.header-content span{
+  color: #c6c6cf;
+  font-weight: 600;
 }
 
 input, button{
@@ -90,6 +97,10 @@ input, button{
   text-align: center;
 }
 
+.melaude-info span{
+  font-weight: 600;
+}
+
 .description{
   margin-bottom: 60px;
   font-size: 25px;
@@ -107,12 +118,14 @@ div.feature-inner{
   border-radius: 3px;
   height: 280px;
   padding: 30px 10px;
+  font-weight: 500;
 }
 
 div button{
   color: #fff;
   border: none;
   background-color: #2ec2bd;
+  font-weight: 700;
 }
 .bottom{
   font-family: 'Dosis', sans-serif;
@@ -124,17 +137,18 @@ div button{
   width: 60%;
   text-align: center;
   color: #fff;
+  padding: 40px 0 1px;
 }
 .hello{
-  margin-top: 50px;
+  
 }
 .press{
-  margin: 50px 0 25px;
+  margin: 15px 0 50px;
 }
 small{
   display: block;
   color: #ababad;
-  margin: 25px 0 0;
+  margin: 25px 0 25px;
 }
 
 small a{
