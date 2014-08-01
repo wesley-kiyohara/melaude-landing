@@ -57,7 +57,7 @@ span, .header-content h2 span, div a{
 .header-content{
     border-radius: 3px;
     color: #c6c6cf;
-    background-color:rgba(80,80,80,0.2);
+    background-color: rgba(80,80,80,0.2);
     padding: 50px 30px 50px 40px;
 }
 
@@ -65,6 +65,7 @@ span, .header-content h2 span, div a{
     color: #fff;
     border-bottom: 3px solid;
     border-color: #2ec2bd;
+    position: relative;
 }
 
 .header-content span{
@@ -175,7 +176,29 @@ button:hover{
     -moz-transition: 0.5s ease;
     -o-transition: 0.5s ease;
 }
+/*
+.LR-transition{
+    position:absolute;
+    top:0; bottom:0; right:0;
+    width:100%;
+    background-color: #fff;
+    -webkit-animation: LR-transition 3s ease-in normal infinite;
+}
 
+@-webkit-keyframes LR-transition{
+    0% {width:100%; opacity: 0%;}
+    25% {width:0%; opacity: 100%;}
+    100% {width:0%; opacity: 100%;}
+}
+*/
+#message{
+    -webkit-animation: fadein 3s normal infinite;
+}
+@-webkit-keyframes fadein{
+    0%{ opacity: 0; }
+    75%{ opacity: 1; }
+    100%{ opacity: 1; }
+}
 /*-----media queries-----*/
 @media only screen and (max-width: 541px){
     form input{
