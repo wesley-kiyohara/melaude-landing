@@ -24,7 +24,7 @@
         success: {},
         error: {}
     };
-
+    /*
     setInterval(function(){
         if (message === 0){
             $('#message').text('IN YOUR NEIGHBORHOOD');
@@ -40,8 +40,21 @@
             $('#message').text('AROUND THE WORLD');
             message = 0;
         }
-    }, 3000);
-
+    }, 3000);*/
+    var changeMessage = function(){
+        if (message === 0){
+            $('#message').text('IN YOUR NEIGHBORHOOD');
+            message = 1;
+        }
+        else if (message === 1){
+            $('#message').text('ACROSS THE COUNTRY');
+            message = 2;
+        }else{
+            $('#message').text('AROUND THE WORLD');
+            message = 0;
+        }
+    };
+    $('#message').on('webkitAnimationIteration', changeMessage);
     /**
      * Success callback for submitting emails for leads.  Let's user know of the result.
      * @param  {Object} result Contains an "errors" property if email is invalid.
