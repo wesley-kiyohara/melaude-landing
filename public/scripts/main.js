@@ -24,23 +24,7 @@
         success: {},
         error: {}
     };
-    /*
-    setInterval(function(){
-        if (message === 0){
-            $('#message').text('IN YOUR NEIGHBORHOOD');
-            //$('#message').html('IN YOUR NEIGHBORHOOD<div class="LR-transition"></div>');
-            message = 1;
-        }
-        else if (message === 1){
-            //$('#message').html('ACROSS THE COUNTRY<div class="LR-transition"></div>');
-            $('#message').text('ACROSS THE COUNTRY');
-            message = 2;
-        }else{
-            //$('#message').html('AROUND THE WORLD<div class="LR-transition"></div>');
-            $('#message').text('AROUND THE WORLD');
-            message = 0;
-        }
-    }, 3000);*/
+    
     var changeMessage = function(){
         if (message === 0){
             $('#message').text('IN YOUR NEIGHBORHOOD');
