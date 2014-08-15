@@ -66,6 +66,12 @@ span, .header-content h2 span, div a{
     border-bottom: 3px solid;
     border-color: #2ec2bd;
     position: relative;
+    left: -40px;
+    display: inline-block;
+}
+
+.message-wrapper{
+    display: inline-block;
 }
 
 .header-content span{
@@ -179,18 +185,25 @@ button:hover{
 
 #message{
     animation: fadein 3s normal infinite;
-    -webkit-animation: fadein 3s normal infinite;
+    -webkit-animation: fadein 3s normal infinite, move 3s infinite;
     -moz-animation: fadein 3s normal infinite;
     -o-animation: fadein 3s normal infinite;
 }
+
+.features{
+    animation: fadein 3s normal;
+    -webkit-animation: fadein 3s normal;
+    -moz-animation: fadein 3s normal;
+    -o-animation: fadein 3s normal;
+}
 @keyframes fadein{
     0%{ opacity: 0; }
-    50%{ opacity: 1; }
+    75%{ opacity: 0.25; }
     100%{ opacity: 1; }
 }
 @-webkit-keyframes fadein{
     0%{ opacity: 0; }
-    50%{ opacity: 1; }
+    75%{ opacity: 1;}
     100%{ opacity: 1; }
 }
 @-moz-keyframes fadein{
@@ -202,6 +215,11 @@ button:hover{
     0%{ opacity: 0; }
     50%{ opacity: 1; }
     100%{ opacity: 1; }
+}
+@-webkit-keyframes move {
+    0% { transform: translateX(0px); }
+    50%{ transform: translateX(40px); }
+    100%{ transform: translateX(40px); }
 }
 
 /*-----media queries-----*/
