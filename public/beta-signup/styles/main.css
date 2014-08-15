@@ -235,13 +235,6 @@ a.bottom-links:hover{
     -o-animation: fadein 5s normal infinite, move 5s infinite;
 }
 
-.features{
-    animation: fadein 3s normal;
-    -webkit-animation: fadein 3s normal;
-    -moz-animation: fadein 3s normal;
-    -o-animation: fadein 3s normal;
-}
-
 .has-error #leadEmail {
     border-color: #f75e5e;
 }
@@ -322,16 +315,4 @@ a.bottom-links:hover{
     input{
         padding: 10px 45px 10px 15px
     }
-    
-}
-
-@media only screen and (max-width: 360px){
-    /*
-    div.feature-inner{
-        height: 445px;
-    }
-
-    #global-auditions div.feature-inner{
-        height:375px;
-    }*/
 }
