@@ -22,10 +22,9 @@ body {
 }
 
 /**/
-.melaude-header h1{
-    font: 'Dosis', sans-serif;
-    font-size: 48px;
-    margin: 90px 0 60px 42px;
+.melaude-header img{
+    margin: 90px 0 40px 42px;
+    width: 25%;
 }
 
 div.page-header{

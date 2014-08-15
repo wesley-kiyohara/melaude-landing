@@ -7,15 +7,15 @@ body{
 	font-size: 1.05em;
 	line-height: 1.5em;
 }
-h1{
-	font-weight: normal;
-	font-size: 3em;
-	margin: 100px 0 80px;
+a img{
+	margin: 100px 0 50px;
+	width: 25%;
 }
 h2{
 	font-weight: 400;
 	color: #82828d;
 	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
 }
 
 h4{
@@ -25,7 +25,7 @@ h4{
 }
 
 li p{
-	margin-left: 40px;
+	margin: 5px 0 5px 40px;
 }
 
 a{
@@ -35,4 +35,16 @@ a{
 
 div{
 	margin-bottom: 50px;
+}
+
+small{
+	color: #d8d8d8;
+	font-size: .6em;
+    display: block;
+    margin: 25px 0 25px;
+    text-align: center;
+}
+
+a:hover{
+	color: #ff8f79;
 }
