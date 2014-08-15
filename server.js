@@ -34,6 +34,14 @@ var routes = require('./server/routes')(app);
 // Set the default path of static files.
 app.use(express.static(__dirname + '/public'));
 
+// Redirect of nothing else sent a response.
+app.use(otherwiseRedirect);
+
+// Redirect all unmatched URLs to the default page.
+function otherwiseRedirect(req, res) {
+  res.redirect("/");
+}
+
 // Let er' rip
 app.listen(config.port, config.hostname);
 
