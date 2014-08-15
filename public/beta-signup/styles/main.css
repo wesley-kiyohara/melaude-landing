@@ -303,9 +303,9 @@ a.bottom-links:hover{
 
 @media only screen and (max-width: 400px){
     div.feature-inner{
-        height: 465px;
+        height: 100%
     }
-
+    #
     .melaude-header h1{
         margin: 90px 0 60px 20px;
     }
@@ -326,11 +326,12 @@ a.bottom-links:hover{
 }
 
 @media only screen and (max-width: 360px){
+    /*
     div.feature-inner{
         height: 445px;
     }
 
     #global-auditions div.feature-inner{
         height:375px;
-    }
+    }*/
 }
