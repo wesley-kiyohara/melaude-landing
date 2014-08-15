@@ -288,13 +288,8 @@ a.bottom-links:hover{
 }
 
 /*-----media queries-----*/
-@media only screen and (max-width: 541px){
-    form input{
-        margin-bottom: 20px;
-    }
-}
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 640px){
     div.feature-inner{
         height: 100%
     }
@@ -315,5 +310,10 @@ a.bottom-links:hover{
     input{
         padding: 10px 25px 10px 15px
     }
-    
+}
+
+@media only screen and (max-width: 541px){
+    form input{
+        margin-bottom: 20px;
+    }
 }
