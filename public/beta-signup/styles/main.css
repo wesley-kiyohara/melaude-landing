@@ -303,13 +303,14 @@ a.bottom-links:hover{
         margin: 90px 0 60px 20px;
     }
     .header-content{
-        padding: 50px 50px 50px 25px;
+        padding: 50px 50px 50px 40px;
     }
     .header-content h2{
         font-size: 27px;
     }
     #message{
         left: 0;
+        bodrer: none;
     }
     input{
         padding: 10px 45px 10px 15px
