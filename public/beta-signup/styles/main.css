@@ -310,10 +310,10 @@ a.bottom-links:hover{
     }
     #message{
         left: 0;
-        bodrer: none;
+        border: none;
     }
     input{
-        padding: 10px 45px 10px 15px
+        padding: 10px 25px 10px 15px
     }
     
 }
