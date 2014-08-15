@@ -298,11 +298,10 @@ a.bottom-links:hover{
     div.feature-inner{
         height: 100%
     }
-    #
-    .melaude-header h1{
+    .melaude-header img{
+        width: 40%;
         margin: 90px 0 60px 20px;
     }
-
     .header-content{
         padding: 50px 50px 50px 25px;
     }
@@ -315,4 +314,5 @@ a.bottom-links:hover{
     input{
         padding: 10px 45px 10px 15px
     }
+    
 }
