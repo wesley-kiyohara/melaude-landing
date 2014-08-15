@@ -30,7 +30,7 @@ body {
 
 div.page-header{
     font-family: 'Dosis', sans-serif;
-    background: url('/images/bg-1920x1080-medium.jpg') no-repeat center;
+    background: url('../images/bg-1920x1080-medium.jpg') no-repeat center;
     background-size: cover;
     color: #fff;
     min-height: 100%;

@@ -4,7 +4,7 @@ var Lead = require('../models/lead.model');
 
 module.exports = function(app) {
 
-    app.route('/lead')
+    app.route('/beta-signup/lead')
 
         /*
          * Create a new lead.
