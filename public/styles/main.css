@@ -136,10 +136,10 @@ div button{
     border: none;
     background: #2ec2bd;
     font-weight: 700;
-    transition: background 0.5s ease-in-out;
-    -webkit-transition: background 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out;
-    -o-transition: background 0.5s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
 }
 .bottom{
     font-family: 'Dosis', sans-serif;
@@ -181,6 +181,10 @@ small a:visited{
 
 button:hover{
     background-color: #ff8f79;
+}
+a.bottom-links:hover{
+    color: #ff8f79;
+    text-decoration: none;
 }
 
 #message{
