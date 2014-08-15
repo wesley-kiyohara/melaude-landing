@@ -38,7 +38,7 @@
             message = 0;
         }
     };
-    $('#message').on('webkitAnimationIteration', changeMessage);
+    $('#message').on('animationIteration webkitAnimationIteration mozAnimationIteration oAnimationIteration', changeMessage);
     /**
      * Success callback for submitting emails for leads.  Let's user know of the result.
      * @param  {Object} result Contains an "errors" property if email is invalid.

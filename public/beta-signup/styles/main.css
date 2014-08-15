@@ -47,9 +47,13 @@ span, .header-content h2 span, div a{
     color: #fff;
 }
 
+#pre-message{
+    display: inline-block;
+}
 .header-content h2, #message{
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
+    position: relative;
 }
 
 .row.melaude-info, .melaude-header{
@@ -69,13 +73,18 @@ span, .header-content h2 span, div a{
     color: #fff;
     border-bottom: 3px solid;
     border-color: #2ec2bd;
-    position: relative;
     left: -40px;
-    display: inline-block;
+    display: block;
 }
 
 .message-wrapper{
     display: inline-block;
+    /*
+    overflow: hidden;
+    position: absolute;
+    margin-left: 7px;
+    left: 445px;
+    */
 }
 
 .header-content span{
@@ -220,10 +229,10 @@ a.bottom-links:hover{
 }
 
 #message{
-    animation: fadein 3s normal infinite;
-    -webkit-animation: fadein 3s normal infinite, move 3s infinite;
-    -moz-animation: fadein 3s normal infinite;
-    -o-animation: fadein 3s normal infinite;
+    animation: fadein 5s normal infinite, move 5s infinite;
+    -webkit-animation: fadein 5s normal infinite, move 5s infinite;
+    -moz-animation: fadein 5s normal infinite, move 5s infinite;
+    -o-animation: fadein 5s normal infinite, move 5s infinite;
 }
 
 .features{
@@ -246,13 +255,13 @@ a.bottom-links:hover{
 
 @keyframes fadein{
     0%{ opacity: 0; }
-    75%{ opacity: 0.25; }
-    100%{ opacity: 1; }
+    50%{ opacity: 1; }
+    100%{ opacity: 0 }
 }
 @-webkit-keyframes fadein{
     0%{ opacity: 0; }
-    75%{ opacity: 1;}
-    100%{ opacity: 1; }
+    50%{ opacity: 1; }
+    100%{ opacity: 0 }
 }
 @-moz-keyframes fadein{
     0%{ opacity: 0; }
@@ -264,10 +273,25 @@ a.bottom-links:hover{
     50%{ opacity: 1; }
     100%{ opacity: 1; }
 }
+@keyframes move {
+    0% { transform: translateX(0px); }
+    50%{ transform: translateX(40px); }
+    100%{ transform: translateX(0px); }
+}
 @-webkit-keyframes move {
     0% { transform: translateX(0px); }
     50%{ transform: translateX(40px); }
-    100%{ transform: translateX(40px); }
+    100%{ transform: translateX(0px); }
+}
+@-moz-keyframes move {
+    0% { transform: translateX(0px); }
+    50%{ transform: translateX(40px); }
+    100%{ transform: translateX(0px); }
+}
+@-o-keyframes move {
+    0% { transform: translateX(0px); }
+    50%{ transform: translateX(40px); }
+    100%{ transform: translateX(0px); }
 }
 
 /*-----media queries-----*/
@@ -279,7 +303,7 @@ a.bottom-links:hover{
 
 @media only screen and (max-width: 400px){
     div.feature-inner{
-        height: 360px;
+        height: 445px;
     }
 
     .melaude-header h1{
@@ -296,7 +320,7 @@ a.bottom-links:hover{
 
 @media only screen and (max-width: 360px){
     div.feature-inner{
-        height: 335px;
+        height: 420px;
     }
 
     #global-auditions div.feature-inner{
