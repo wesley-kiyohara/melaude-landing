@@ -53,14 +53,17 @@
             // TODO Display the "msg" property of the error objects.
             // NOTE There will, for now, only be one error object in the array (email).
             errors.forEach(function(val) {
-                console.log(val);
+                if (val.param === 'email') {
+                    $('#leadForm').addClass('has-error');
+                }
             });
         }
-        else {
+        else if (result.success) {
+
             // No errors are present and the submission was a success.
-            //
-            // TODO Tell/show user of success.
-            console.log(result);
+            $('#leadForm').removeClass('has-error');
+            $('.header-content > .success-content').removeClass('hide');
+            $('.header-content > .input-content').addClass('hide');
         }
     };
 

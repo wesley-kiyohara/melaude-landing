@@ -59,7 +59,7 @@ span, .header-content h2 span, div a{
     width: 90%;
 }
 
-.header-content{
+.header-content {
     border-radius: 3px;
     color: #c6c6cf;
     background-color: rgba(80,80,80,0.2);
@@ -105,11 +105,16 @@ button{
     letter-spacing: 1.3px;
 }
 
+input:focus, button:focus{
+    outline: none;
+}
+
 .header-content div input{
     background-color: transparent;
     border: solid 1px #fff;
     margin-right: 30px;
     color: #fff;
+    letter-spacing: 0.0525em;
 }
 
 .bar{
@@ -228,6 +233,18 @@ a.bottom-links:hover{
     -moz-animation: fadein 3s normal;
     -o-animation: fadein 3s normal;
 }
+
+.has-error #leadEmail {
+    border-color: #f75e5e;
+}
+
+.has-error #leadEmailError {
+    visibility: visible;
+    color: #f75e5e;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
 @keyframes fadein{
     0%{ opacity: 0; }
     75%{ opacity: 0.25; }

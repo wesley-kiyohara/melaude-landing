@@ -30,7 +30,7 @@ module.exports = function(app) {
                     if (err) { res.send(err); }
 
                     // Send a response message that the lead was successfully created.
-                    res.json({ message: 'Email sent!'});
+                    res.json({ success: true });
                 })
             }
             else {

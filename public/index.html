@@ -20,21 +20,27 @@
             <div class="melaude-header">
                 <h1>melaude</h1>
                 <div class="header-content">
-                    <h2>FIND MUSICIANS 
-                        <span>&amp</span> 
-                        AUDITION FOR BANDS 
-                        <div class="message-wrapper">
-                            <span id="message">
-                                IN YOUR NEIGHBORHOOD
-                            </span>
-                        </div>
-                    </h2>
+                    <div class="input-content">
+                        <h2>FIND MUSICIANS 
+                            <span>&amp</span> 
+                            AUDITION FOR BANDS 
+                            <div class="message-wrapper">
+                                <span id="message">
+                                    IN YOUR NEIGHBORHOOD
+                                </span>
+                            </div>
+                        </h2>
                         <span id="first-access">get first access to the beta launch</span>
-                    <div>
-                        <form id="leadForm" method="POST" action="/lead" novalidate>
-                            <input id="leadEmail" type="email" name="email" placeholder="your@email.com"/>
-                            <button type="submit">JOIN THE LIST</button>
-                        </form>
+                        <div>
+                            <form id="leadForm" method="POST" action="/lead" novalidate>
+                                <input id="leadEmail" type="email" name="email" placeholder="your@email.com"/>
+                                <button type="submit">JOIN THE LIST</button>
+                                <p id="leadEmailError" class="invisible">please enter a valid email address</p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="success-content hide">
+                        <h2>THANKS! WE'LL LET YOU KNOW WHEN BETA LAUNCH GETS CLOSER.</h2>
                     </div>
                 </div>
             </div>
@@ -101,5 +107,16 @@
     <!--Scripts-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-53852342-1');
+      ga('send', 'pageview');
+    </script>
+
     </body>
 </html>
