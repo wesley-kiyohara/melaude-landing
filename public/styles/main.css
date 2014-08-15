@@ -54,7 +54,7 @@ span, .header-content h2 span, div a{
     width: 75%;
 }
 
-.header-content{
+.header-content {
     border-radius: 3px;
     color: #c6c6cf;
     background-color: rgba(80,80,80,0.2);
@@ -76,7 +76,7 @@ span, .header-content h2 span, div a{
 
 .header-content span{
     color: #c6c6cf;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.3em;
 }
 
@@ -89,11 +89,16 @@ input, button{
     padding: 10px 15px;
 }
 
+input:focus, button:focus{
+    outline: none;
+}
+
 .header-content div input{
     background-color: transparent;
     border: solid 1px #fff;
     margin-right: 30px;
     color: #fff;
+    letter-spacing: 0.0525em;
 }
 
 .bar{
@@ -200,6 +205,18 @@ a.bottom-links:hover{
     -moz-animation: fadein 3s normal;
     -o-animation: fadein 3s normal;
 }
+
+.has-error #leadEmail {
+    border-color: #f75e5e;
+}
+
+.has-error #leadEmailError {
+    visibility: visible;
+    color: #f75e5e;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
 @keyframes fadein{
     0%{ opacity: 0; }
     75%{ opacity: 0.25; }

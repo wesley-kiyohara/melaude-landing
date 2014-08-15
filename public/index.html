@@ -18,21 +18,27 @@
             <div class="melaude-header">
                 <h1>melaude</h1>
                 <div class="header-content">
-                    <h2>FIND MUSICIANS 
-                        <span>&amp</span> 
-                        AUDITION FOR BANDS 
-                        <div class="message-wrapper">
-                            <span id="message">
-                                IN YOUR NEIGHBORHOOD
-                            </span>
-                        </div>
-                    </h2>
+                    <div class="input-content">
+                        <h2>FIND MUSICIANS 
+                            <span>&amp</span> 
+                            AUDITION FOR BANDS 
+                            <div class="message-wrapper">
+                                <span id="message">
+                                    IN YOUR NEIGHBORHOOD
+                                </span>
+                            </div>
+                        </h2>
                         <span>get first access to the beta launch</span>
-                    <div>
-                        <form id="leadForm" method="POST" action="/lead" novalidate>
-                            <input id="leadEmail" type="email" name="email" placeholder="your@email.com"/>
-                            <button type="submit">JOIN THE LIST</button>
-                        </form>
+                        <div>
+                            <form id="leadForm" method="POST" action="/lead" novalidate>
+                                <input id="leadEmail" type="email" name="email" placeholder="your@email.com"/>
+                                <button type="submit">JOIN THE LIST</button>
+                                <p id="leadEmailError" class="invisible">please enter a valid email address</p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="success-content hide">
+                        <h2>THANKS! WE'LL LET YOU KNOW WHEN BETA LAUNCH GETS CLOSER.</h2>
                     </div>
                 </div>
             </div>
