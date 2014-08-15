@@ -1,21 +1,27 @@
 body{
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #747684;
 	width: 80%;
 	margin: 0 auto;
-	font-weight: 400;
+	font-weight: 300;
+	font-size: 1.05em;
+	line-height: 1.5em;
 }
 h1{
 	font-weight: normal;
 	font-size: 3em;
+	margin: 100px 0 80px;
 }
 h2{
 	font-weight: 400;
 	color: #82828d;
+	font-family: 'Oswald', sans-serif;
 }
 
 h4{
-	font-weight: 600;
+	font-weight: 500;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.3em;
 }
 
 li p{
