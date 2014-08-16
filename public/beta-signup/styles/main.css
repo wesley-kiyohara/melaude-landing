@@ -79,12 +79,8 @@ span, .header-content h2 span, div a{
 
 .message-wrapper{
     display: inline-block;
-    /*
     overflow: hidden;
-    position: absolute;
-    margin-left: 7px;
-    left: 445px;
-    */
+    vertical-align: top;
 }
 
 .header-content span{
