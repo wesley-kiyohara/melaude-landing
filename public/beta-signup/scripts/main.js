@@ -38,7 +38,9 @@
             message = 0;
         }
     };
+
     $('#message').on('animationiteration webkitAnimationIteration oanimationiteration MSAnimationIteration', changeMessage);
+    
     /**
      * Success callback for submitting emails for leads.  Let's user know of the result.
      * @param  {Object} result Contains an "errors" property if email is invalid.
@@ -87,4 +89,9 @@
             success: callbacks.success.leadFormSubmit
         });
     })
+
+    // Scroll back to the top so the user can enter their email address.
+    $('#firstAccess').on('click', function() {
+        window.scrollTo(0,0);
+    });
 })();
