@@ -228,13 +228,6 @@ a.bottom-links:hover{
     text-decoration: none;
 }
 
-#message{
-    animation: fadein 5s normal infinite, move 5s infinite;
-    -webkit-animation: fadein 5s normal infinite, move 5s infinite;
-    -moz-animation: fadein 5s normal infinite, move 5s infinite;
-    -o-animation: fadein 5s normal infinite, move 5s infinite;
-}
-
 .has-error #leadEmail {
     border-color: #f75e5e;
 }
@@ -246,45 +239,68 @@ a.bottom-links:hover{
     margin-top: 5px;
 }
 
+#message{
+    animation: fadein 5s normal infinite;
+    -webkit-animation: fadein 5s normal infinite;
+    -moz-animation: fadein 5s normal infinite;
+    -o-animation: fadein 5s normal infinite;
+}
+
 @keyframes fadein{
-    0%{ opacity: 0; }
-    50%{ opacity: 1; }
-    100%{ opacity: 0 }
+    0%{ 
+        opacity: 0;
+        transform: translateX(0px);
+     }
+    50%{
+        opacity: 1; 
+        transform: translateX(40px);
+    }
+    100%{
+        opacity: 0 
+        transform: translateX(0px);
+    }
 }
 @-webkit-keyframes fadein{
-    0%{ opacity: 0; }
-    50%{ opacity: 1; }
-    100%{ opacity: 0 }
+    0%{ 
+        opacity: 0;
+        transform: translateX(0px);
+     }
+    50%{
+        opacity: 1; 
+        transform: translateX(40px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(0px);
+    }
 }
 @-moz-keyframes fadein{
-    0%{ opacity: 0; }
-    50%{ opacity: 1; }
-    100%{ opacity: 0 }
+    0%{ 
+        opacity: 0;
+        transform: translateX(0px);
+     }
+    50%{
+        opacity: 1; 
+        transform: translateX(40px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(0px);
+    }
 }
 @-o-keyframes fadein{
-    0%{ opacity: 0; }
-    50%{ opacity: 1; }
-    100%{ opacity: 0; }
-}
-@keyframes move {
-    0% { transform: translateX(0px); }
-    50%{ transform: translateX(40px); }
-    100%{ transform: translateX(0px); }
-}
-@-webkit-keyframes move {
-    0% { transform: translateX(0px); }
-    50%{ transform: translateX(40px); }
-    100%{ transform: translateX(0px); }
-}
-@-moz-keyframes move {
-    0% { transform: translateX(0px); }
-    50%{ transform: translateX(40px); }
-    100%{ transform: translateX(0px); }
-}
-@-o-keyframes move {
-    0% { transform: translateX(0px); }
-    50%{ transform: translateX(40px); }
-    100%{ transform: translateX(0px); }
+    0%{ 
+        opacity: 0;
+        transform: translateX(0px);
+     }
+    50%{
+        opacity: 1; 
+        transform: translateX(40px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(0px);
+    }
 }
 
 /*-----media queries-----*/
