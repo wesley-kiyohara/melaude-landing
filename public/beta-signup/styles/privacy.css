@@ -48,3 +48,10 @@ small{
 a:hover{
 	color: #ff8f79;
 }
+
+/*-----media queries-----*/
+@media only screen and (max-width: 640px){
+	a img{
+        width: 40%;
+    }
+}
