@@ -73,7 +73,7 @@ span, .header-content h2 span, div a{
     color: #fff;
     border-bottom: 3px solid;
     border-color: #2ec2bd;
-    left: -40px;
+    bottom: 40px;
     display: block;
 }
 
@@ -239,66 +239,66 @@ a.bottom-links:hover{
 }
 
 #message{
-    animation: fadein 5s normal infinite;
-    -webkit-animation: fadein 5s normal infinite;
-    -moz-animation: fadein 5s normal infinite;
-    -o-animation: fadein 5s normal infinite;
+    animation: fadein 3s normal infinite;
+    -webkit-animation: fadein 3s normal infinite;
+    -moz-animation: fadein 3s normal infinite;
+    -o-animation: fadein 3s normal infinite;
 }
 
 @keyframes fadein{
     0%{ 
         opacity: 0;
-        transform: translateX(0px);
+        transform: translateY(0px);
      }
     50%{
         opacity: 1; 
-        transform: translateX(40px);
+        transform: translateY(40px);
     }
     100%{
-        opacity: 0 
-        transform: translateX(0px);
+        opacity: 0;
+        transform: translateY(0px);
     }
 }
 @-webkit-keyframes fadein{
     0%{ 
         opacity: 0;
-        transform: translateX(0px);
+        transform: translateY(0px);
      }
     50%{
         opacity: 1; 
-        transform: translateX(40px);
+        transform: translateY(40px);
     }
     100%{
         opacity: 0;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 @-moz-keyframes fadein{
     0%{ 
         opacity: 0;
-        transform: translateX(0px);
+        transform: translateY(0px);
      }
     50%{
         opacity: 1; 
-        transform: translateX(40px);
+        transform: translateY(40px);
     }
     100%{
         opacity: 0;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 @-o-keyframes fadein{
     0%{ 
         opacity: 0;
-        transform: translateX(0px);
+        transform: translateY(0px);
      }
     50%{
         opacity: 1; 
-        transform: translateX(40px);
+        transform: translateY(40px);
     }
     100%{
         opacity: 0;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 
