@@ -246,60 +246,24 @@ a.bottom-links:hover{
 }
 
 @keyframes fadein{
-    0%{ 
-        opacity: 0;
-        transform: translateY(0px);
-     }
-    50%{
-        opacity: 1; 
-        transform: translateY(40px);
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(0px);
-    }
+    0%{ opacity: 0; transform: translateY(0px); }
+    50%{ opacity: 1; transform: translateY(40px); }
+    100%{ opacity: 0; transform: translateY(0px); }
 }
 @-webkit-keyframes fadein{
-    0%{ 
-        opacity: 0;
-        transform: translateY(0px);
-     }
-    50%{
-        opacity: 1; 
-        transform: translateY(40px);
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(0px);
-    }
+    0%{ opacity: 0; transform: translateY(0px); }
+    50%{ opacity: 1; transform: translateY(40px); }
+    100%{ opacity: 0; transform: translateY(0px); }
 }
 @-moz-keyframes fadein{
-    0%{ 
-        opacity: 0;
-        transform: translateY(0px);
-     }
-    50%{
-        opacity: 1; 
-        transform: translateY(40px);
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(0px);
-    }
+    0%{ opacity: 0; transform: translateY(0px); }
+    50%{ opacity: 1; transform: translateY(40px); }
+    100%{ opacity: 0; transform: translateY(0px); }
 }
 @-o-keyframes fadein{
-    0%{ 
-        opacity: 0;
-        transform: translateY(0px);
-     }
-    50%{
-        opacity: 1; 
-        transform: translateY(40px);
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(0px);
-    }
+    0%{ opacity: 0; transform: translateY(0px); }
+    50%{ opacity: 1; transform: translateY(40px); }
+    100%{ opacity: 0; transform: translateY(0px); }
 }
 
 /*-----media queries-----*/
