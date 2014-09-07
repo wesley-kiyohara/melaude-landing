@@ -18,6 +18,8 @@
  */
 (function () {
     'use strict';
+    var s = skrollr.init();
+
     var message = 1;
 
     var callbacks = {
