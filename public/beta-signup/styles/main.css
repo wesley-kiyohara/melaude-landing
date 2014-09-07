@@ -284,6 +284,15 @@ a.bottom-links:hover{
     }
 }
 @media only screen and (max-width: 991px){
+    div.description{
+        float: initial;
+    }
+    div.feature-inner{
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px){
     div.feature-inner{
         height: 100%;
     }
