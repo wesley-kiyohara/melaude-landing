@@ -93,8 +93,9 @@
         });
     })
 
-    // Scroll back to the top so the user can enter their email address.
+    // Scroll back to the top so the user can enter their email address. Places cursor in input field.
     $('#firstAccess').on('click', function() {
         window.scrollTo(0,0);
+        $('#leadEmail').focus();
     });
 })();
