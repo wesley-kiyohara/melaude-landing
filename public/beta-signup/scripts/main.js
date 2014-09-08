@@ -18,6 +18,7 @@
  */
 (function () {
     'use strict';
+    //initialze skrollr.js
     var s = skrollr.init();
 
     var message = 1;
@@ -26,7 +27,7 @@
         success: {},
         error: {}
     };
-    
+    //Alternate between different messages
     var changeMessage = function(){
         if (message === 0){
             $('#message').text('IN YOUR NEIGHBORHOOD');
@@ -40,7 +41,7 @@
             message = 0;
         }
     };
-
+    //Call changeMessage() when a CSS animation happens to keep CSS and JS synched
     $('#message').on('animationiteration webkitAnimationIteration oanimationiteration MSAnimationIteration', changeMessage);
     
     /**
