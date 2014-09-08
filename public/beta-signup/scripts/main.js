@@ -21,28 +21,45 @@
     //initialze skrollr.js
     var s = skrollr.init();
 
-    var message = 1;
+    var message1 = 1;
+    var message2 = 1;
 
     var callbacks = {
         success: {},
         error: {}
     };
     //Alternate between different messages
-    var changeMessage = function(){
-        if (message === 0){
-            $('#message').text('IN YOUR NEIGHBORHOOD');
-            message = 1;
+    //changeMessage1() is called when #message1's animation happens
+    //changeMessage2() is called when #message2's animation happens (3s delay from #message1)
+    var changeMessage1 = function(){
+        if (message1 === 0){
+            $('#message1').text('IN YOUR NEIGHBORHOOD');
+            message1 = 1;
         }
-        else if (message === 1){
-            $('#message').text('ACROSS THE COUNTRY');
-            message = 2;
+        else if (message1 === 1){
+            $('#message1').text('AROUND THE WORLD');
+            message1 = 2;
         }else{
-            $('#message').text('AROUND THE WORLD');
-            message = 0;
+            $('#message1').text('ACROSS THE COUNTRY');
+            message1 = 0;
         }
     };
-    //Call changeMessage() when a CSS animation happens to keep CSS and JS synched
-    $('#message').on('animationiteration webkitAnimationIteration oanimationiteration MSAnimationIteration', changeMessage);
+    var changeMessage2 = function(){
+        if (message2 === 0){
+            $('#message2').text('ACROSS THE COUNTRY');
+            message2 = 1;
+        }
+        else if (message2 === 1){
+            $('#message2').text('IN YOUR NEIGHBORHOOD');
+            message2 = 2;
+        }else{
+            $('#message2').text('AROUND THE WORLD');
+            message2 = 0;
+        }
+    };
+    //Call changeMessage1() or changeMessage2() when a CSS animation happens to keep CSS and JS synched
+    $('#message1').on('animationiteration webkitAnimationIteration oanimationiteration MSAnimationIteration', changeMessage1);
+    $('#message2').on('animationiteration webkitAnimationIteration oanimationiteration MSAnimationIteration', changeMessage2);
     
     /**
      * Success callback for submitting emails for leads.  Let's user know of the result.

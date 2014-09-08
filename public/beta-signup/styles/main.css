@@ -51,7 +51,7 @@ span, .header-content h2 span, div a{
 #pre-message{
     display: inline-block;
 }
-.header-content h2, #message{
+.header-content h2, #message1, #message2{
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     position: relative;
@@ -77,12 +77,13 @@ span, .header-content h2 span, div a{
     padding: 50px 30px 50px 40px;
 }
 
-#message{
+#message1, #message2{
     color: #fff;
     border-bottom: 3px solid;
     border-color: #2ec2bd;
     bottom: 40px;
     display: block;
+    position: absolute;
 }
 
 .message-wrapper{
@@ -195,9 +196,6 @@ div button{
     color: #747684;
     padding: 40px 0 1px;
 }
-.hello{
-    
-}
 .press{
     margin: 15px 0 40px;
 }
@@ -248,11 +246,18 @@ a.bottom-links:hover{
     margin-top: 5px;
 }
 
-#message{
+#message1,#message2{
     animation: fadein 3s normal infinite;
-    -webkit-animation: fadein 3s normal infinite;
+    -webkit-animation: fadein 6s normal infinite;
     -moz-animation: fadein 3s normal infinite;
     -o-animation: fadein 3s normal infinite;
+}
+
+#message2{
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
 }
 
 @keyframes fadein{
@@ -263,7 +268,7 @@ a.bottom-links:hover{
 @-webkit-keyframes fadein{
     0%{ opacity: 0; transform: translateY(0px); }
     50%{ opacity: 1; transform: translateY(40px); }
-    100%{ opacity: 0; transform: translateY(0px); }
+    100%{ opacity: 0; transform: translateY(80px); }
 }
 @-moz-keyframes fadein{
     0%{ opacity: 0; transform: translateY(0px); }
@@ -316,7 +321,7 @@ a.bottom-links:hover{
     .header-content h2{
         font-size: 27px;
     }
-    #message{
+    #message1,#message2{
         left: 0;
         border: none;
     }
