@@ -50,6 +50,7 @@ span, .header-content h2 span, div a{
 
 #pre-message{
     display: inline-block;
+    vertical-align: top;
 }
 .header-content h2, #message1, #message2{
     font-family: 'Oswald', sans-serif;
