@@ -149,9 +149,10 @@ input:focus, button:focus{
     font-size: 25px;
 }
 .features h4{
-    color: #4b4c54;
+    color: #7d7e86;
     font-family: 'Oswald', sans-serif;
     margin-top: 25px;
+    letter-spacing: 1px;
 }
 .features{
     margin-bottom: 60px;
@@ -168,7 +169,7 @@ div.feature-inner{
 
 div.feature-inner div{
     font-weight: 300;
-    font-size: 1.15em;
+    font-size: 1.2em;
     line-height: 1.5em;
 }
 
