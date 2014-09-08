@@ -246,12 +246,25 @@ a.bottom-links:hover{
     font-weight: 700;
     margin-top: 5px;
 }
-
-#message1,#message2{
-    animation: fadein 3s normal infinite;
+#message1{
+    animation: fadein 6s normal infinite;
     -webkit-animation: fadein 6s normal infinite;
-    -moz-animation: fadein 3s normal infinite;
-    -o-animation: fadein 3s normal infinite;
+    -moz-animation: fadein 6s normal infinite;
+    -o-animation: fadein 6s normal infinite;
+}
+#message2{
+    animation: fadein 6s 3s normal infinite;
+    -webkit-animation: fadein 6s 3s normal infinite;
+    -moz-animation: fadein 6s 3s normal infinite;
+    -o-animation: fadein 6s 3s normal infinite;
+}
+}
+/*
+#message1,#message2{
+    animation: fadein 6s normal infinite;
+    -webkit-animation: fadein 6s normal infinite;
+    -moz-animation: fadein 6s normal infinite;
+    -o-animation: fadein 6s normal infinite;
 }
 
 #message2{
@@ -260,7 +273,7 @@ a.bottom-links:hover{
     -moz-animation-delay: 3s;
     -o-animation-delay: 3s;
 }
-
+*/
 @keyframes fadein{
     0%{ opacity: 0; transform: translateY(0px); }
     50%{ opacity: 1; transform: translateY(40px); }
