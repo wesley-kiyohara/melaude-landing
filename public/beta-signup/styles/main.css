@@ -153,6 +153,7 @@ input:focus, button:focus{
     font-family: 'Oswald', sans-serif;
     margin-top: 25px;
     letter-spacing: 1px;
+    font-size: 17px;
 }
 .features{
     margin-bottom: 60px;
@@ -183,7 +184,7 @@ div button{
 }
 .bottom{
     font-family: 'Dosis', sans-serif;
-    background-color: #4b4c54;
+    background-color: #f5f5f6;
     margin-top: 100px;
 }
 .feedback{
@@ -191,7 +192,7 @@ div button{
     margin: 0 auto;
     width: 60%;
     text-align: center;
-    color: #fff;
+    color: #747684;
     padding: 40px 0 1px;
 }
 .hello{
@@ -202,12 +203,12 @@ div button{
 }
 small{
     display: block;
-    color: #ababad;
+    color: #747684;
     margin: 25px 0 25px;
 }
 
 small a{
-    color: #ababad;
+    color: #747684;
 }
 
 
