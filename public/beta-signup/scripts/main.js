@@ -18,6 +18,12 @@
  */
 (function () {
     'use strict';
+
+    //Set the min-height of the 2nd section equal to the height of the viewport
+    var setHeight = function(){
+        var viewportHeight = $(window).height();
+        $('#section-2 div.container').css({'min-height': viewportHeight});
+    };
     //initialze skrollr.js
     var s = skrollr.init();
 
@@ -115,4 +121,7 @@
         window.scrollTo(0,0);
         $('#leadEmail').focus();
     });
+
+    //Handle window resizing
+    $(window).resize(setHeight);
 })();
