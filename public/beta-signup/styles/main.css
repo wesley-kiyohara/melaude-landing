@@ -250,17 +250,17 @@ a.bottom-links:hover{
     margin-top: 5px;
 }
 #message1{
-    animation: fadein 6s normal infinite;
+    animation: fadein1 8s normal infinite;
     -webkit-animation: fadein1 8s normal infinite;
-    -moz-animation: fadein 6s normal infinite;
-    -o-animation: fadein 6s normal infinite;
+    -moz-animation: fadein1 8s normal infinite;
+    -o-animation: fadein1 8s normal infinite;
 }
 
 #message2{
-    animation: fadein 6s 3s normal infinite;
+    animation: fadein2 8s 1s normal infinite;
     -webkit-animation: fadein2 8s 1s normal infinite;
-    -moz-animation: fadein 6s 3s normal infinite;
-    -o-animation: fadein 6s 3s normal infinite;
+    -moz-animation: fadein2 8s 1s normal infinite;
+    -o-animation: fadein2 8s 1s normal infinite;
 }
 
 /*
