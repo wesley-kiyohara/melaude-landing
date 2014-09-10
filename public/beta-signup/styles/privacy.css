@@ -1,57 +1,57 @@
 body{
-	font-family: 'Open Sans', sans-serif;
-	color: #747684;
-	width: 80%;
-	margin: 0 auto;
-	font-weight: 300;
-	font-size: 1.05em;
-	line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    color: #747684;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 1.05em;
+    line-height: 1.5em;
 }
 a img{
-	margin: 100px 0 50px;
-	width: 17%;
+    margin: 100px 0 50px;
+    width: 17%;
 }
 h2{
-	font-weight: 400;
-	color: #82828d;
-	font-family: 'Oswald', sans-serif;
-	font-size: 2em;
+    font-weight: 400;
+    color: #82828d;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
 }
 
 h4{
-	font-weight: 500;
-	font-family: 'Oswald', sans-serif;
-	font-size: 1.3em;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
 }
 
 li p{
-	margin: 5px 0 5px 40px;
+    margin: 5px 0 5px 40px;
 }
 
 a{
-	color: #2ec2bd;
-	text-decoration: none;
+    color: #2ec2bd;
+    text-decoration: none;
 }
 
 div{
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 small{
-	color: #d8d8d8;
-	font-size: .6em;
+    color: #d8d8d8;
+    font-size: .6em;
     display: block;
     margin: 25px 0 25px;
     text-align: center;
 }
 
 a:hover{
-	color: #ff8f79;
+    color: #ff8f79;
 }
 
 /*-----media queries-----*/
 @media only screen and (max-width: 640px){
-	a img{
+    a img{
         width: 40%;
     }
 }
