@@ -351,6 +351,12 @@ a.bottom-links:hover{
     div.feature-inner{
         height: 100%;
     }
+    section.page-header{
+    background-attachment: static;
+    }
+    .melaude-header{
+        position: static;
+    }
 }
 
 @media only screen and (max-width: 767px){
