@@ -266,6 +266,12 @@ a.bottom-links:hover{
     -o-animation: fadein2 8s 1s normal infinite;
 }
 
+#skrollr-body {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
 /*
 #message1,#message2{
     animation: fadein 6s normal infinite;
