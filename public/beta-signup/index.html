@@ -33,121 +33,123 @@
 
     </head>
     <body>
-    <section id="section-1" class="page-header"
+    <div>
+        <section id="section-1" class="page-header"
         data-center="background-position: 50% 0px;"
         data-top-bottom="background-position: 50% -100px;"
         data-anchor-target="#section-1">
-        <div class="container">
-            <div class="melaude-header"
-                data-0="opacity: 1;"
-                data-50p="opacity: 0;">
-                <img src="images/melaude-logo-white-500x94.png"/>
-                <div class="header-content">
-                    <div class="input-content">
-                        <h2>
-                            <div id="pre-message">FIND MUSICIANS 
-                                <span>&amp</span> 
-                                AUDITION FOR BANDS 
+            <div class="container">
+                <div class="melaude-header"
+                    data-0="opacity: 1;"
+                    data-50p="opacity: 0;">
+                    <img src="images/melaude-logo-white-500x94.png"/>
+                    <div class="header-content">
+                        <div class="input-content">
+                            <h2>
+                                <div id="pre-message">FIND MUSICIANS 
+                                    <span>&amp</span> 
+                                    AUDITION FOR BANDS 
+                                </div>
+                                <div class="message-wrapper">
+                                    <span id="message1">
+                                        IN YOUR NEIGHBORHOOD
+                                    </span>
+                                    <span id="message2">
+                                        ACROSS THE COUNTRY
+                                    </span>
+                                </div>
+                            </h2>
+                            <span id="first-access">get first access to the beta launch</span>
+                            <div>
+                                <form id="leadForm" method="POST" action="/lead" novalidate>
+                                    <input id="leadEmail" type="email" name="email" placeholder="your@email.com"/>
+                                    <button class="fade-in-out" type="submit">JOIN THE LIST</button>
+                                    <p id="leadEmailError" class="invisible">please enter a valid email address</p>
+                                </form>
                             </div>
-                            <div class="message-wrapper">
-                                <span id="message1">
-                                    IN YOUR NEIGHBORHOOD
-                                </span>
-                                <span id="message2">
-                                    ACROSS THE COUNTRY
-                                </span>
-                            </div>
-                        </h2>
-                        <span id="first-access">get first access to the beta launch</span>
-                        <div>
-                            <form id="leadForm" method="POST" action="/lead" novalidate>
-                                <input id="leadEmail" type="email" name="email" placeholder="your@email.com"/>
-                                <button class="fade-in-out" type="submit">JOIN THE LIST</button>
-                                <p id="leadEmailError" class="invisible">please enter a valid email address</p>
-                            </form>
                         </div>
-                    </div>
-                    <div class="success-content hide">
-                        <h2>THANKS! WE'LL LET YOU KNOW WHEN BETA LAUNCH GETS CLOSER.</h2>
+                        <div class="success-content hide">
+                            <h2>THANKS! WE'LL LET YOU KNOW WHEN BETA LAUNCH GETS CLOSER.</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <div id="skrollr-body">
-    <div class="bar"></div>
-    <section id="section-2">
-        <div class="container">
-            <div class="row melaude-info"
+        <div class="bar"></div>
+        <section id="section-2">
+            <div class="container">
+                <div class="row melaude-info"
+                    data-0="opacity: 0;"
+                    data-100p="opacity: 1;">
+                    <div class="col-sm-12 description">
+                        <span>melaude</span> is a digital space where musicians can audition for bands, scout and recruit talent, and collaborate together on the projects that define the world's music scenes.
+                    </div>
+                    <div class="col-md-4 features">
+                        <div class="feature-inner">
+                            <img src="images/mic-icon-64x64.png"/>
+                            <h4>GLOBAL AUDITIONS</h4>
+                            <div>
+                                Skip craigslist ads &amp paper flyers. melaude allows you to share audition videos, recordings, &amp other content online to try out for bands located anywhere throughout the world.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 features">
+                        <div class="feature-inner">
+                            <img src="images/search-icon-64x64.png"/>
+                            <h4>TALENT SCOUTING</h4>
+                            <div>
+                                In need of a guitarist, vocalist, or &#95&#95&#95&#95&#95 ? Start your own band or project by using melaude's network to find &amp vet potential band members. Discover, scout, &amp connect with fellow musicians from your local area &amp beyond.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 features">
+                        <div class="feature-inner">
+                            <img src="images/music-icon-64x64.png"/>
+                            <h4>MATCH RECOMMENDATIONS</h4>
+                            <div>
+                                Based on your musical preferences, melaude shows you the most relevant audition opportunities so you don't miss a single chance to try out for the bands &amp projects that best fit you.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <button id="firstAccess" class="fade-in-out">GET FIRST ACCESS TO MELAUDE'S BETA LAUNCH</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom">
+            <div class="feedback"
                 data-0="opacity: 0;"
                 data-100p="opacity: 1;">
-                <div class="col-sm-12 description">
-                    <span>melaude</span> is a digital space where musicians can audition for bands, scout and recruit talent, and collaborate together on the projects that define the world's music scenes.
+                <div class="hello">
+                    got a question or comment? feel free to drop us a line at <a class="bottom-links fade-in-out" href="mailto:hello@melaude.com">hello@melaude.com</a>
+                </div> 
+                <div class="press">
+                    for all things press-related, send us an email at 
+                    <a class="bottom-links fade-in-out" href="mailto:press@melaude.com">press@melaude.com</a> 
+                    or download our 
+                    <a class="bottom-links fade-in-out" href="assets/melaude press kit.rar" type="application/x-rar-compressed">press kit</a>
                 </div>
-                <div class="col-md-4 features">
-                    <div class="feature-inner">
-                        <img src="images/mic-icon-64x64.png"/>
-                        <h4>GLOBAL AUDITIONS</h4>
-                        <div>
-                            Skip craigslist ads &amp paper flyers. melaude allows you to share audition videos, recordings, &amp other content online to try out for bands located anywhere throughout the world.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 features">
-                    <div class="feature-inner">
-                        <img src="images/search-icon-64x64.png"/>
-                        <h4>TALENT SCOUTING</h4>
-                        <div>
-                            In need of a guitarist, vocalist, or &#95&#95&#95&#95&#95 ? Start your own band or project by using melaude's network to find &amp vet potential band members. Discover, scout, &amp connect with fellow musicians from your local area &amp beyond.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 features">
-                    <div class="feature-inner">
-                        <img src="images/music-icon-64x64.png"/>
-                        <h4>MATCH RECOMMENDATIONS</h4>
-                        <div>
-                            Based on your musical preferences, melaude shows you the most relevant audition opportunities so you don't miss a single chance to try out for the bands &amp projects that best fit you.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12">
-                    <button id="firstAccess" class="fade-in-out">GET FIRST ACCESS TO MELAUDE'S BETA LAUNCH</button>
-                </div>
+                <small>
+                    &copy melaude. adapted 
+                    <a class="bottom-links fade-in-out" href="https://www.flickr.com/photos/danielbomsdorf/9443254485/"target="_blank">
+                        photo
+                    </a> 
+                    licensed under 
+                    <a class="bottom-links fade-in-out" href="https://www.flickr.com/people/danielbomsdorf/" target="_blank">
+                        CC-BY-2.0
+                    </a>
+                    <a class="bottom-links fade-in-out" href="https://creativecommons.org/licenses/by/2.0/" target="_blank">
+                        daniel.bomsdorf
+                    </a> | 
+                    <a class="bottom-links fade-in-out" href="privacy-policy.html" target="_blank">
+                        privacy policy
+                    </a>
+                </small>
             </div>
-        </div>
-    </section>
-    <section class="bottom">
-        <div class="feedback"
-            data-0="opacity: 0;"
-            data-100p="opacity: 1;">
-            <div class="hello">
-                got a question or comment? feel free to drop us a line at <a class="bottom-links fade-in-out" href="mailto:hello@melaude.com">hello@melaude.com</a>
-            </div> 
-            <div class="press">
-                for all things press-related, send us an email at 
-                <a class="bottom-links fade-in-out" href="mailto:press@melaude.com">press@melaude.com</a> 
-                or download our 
-                <a class="bottom-links fade-in-out" href="assets/melaude press kit.rar" type="application/x-rar-compressed">press kit</a>
-            </div>
-            <small>
-                &copy melaude. adapted 
-                <a class="bottom-links fade-in-out" href="https://www.flickr.com/photos/danielbomsdorf/9443254485/"target="_blank">
-                    photo
-                </a> 
-                licensed under 
-                <a class="bottom-links fade-in-out" href="https://www.flickr.com/people/danielbomsdorf/" target="_blank">
-                    CC-BY-2.0
-                </a>
-                <a class="bottom-links fade-in-out" href="https://creativecommons.org/licenses/by/2.0/" target="_blank">
-                    daniel.bomsdorf
-                </a> | 
-                <a class="bottom-links fade-in-out" href="privacy-policy.html" target="_blank">
-                    privacy policy
-                </a>
-            </small>
-        </div>
-    </section>
+        </section>
     </div>
     <!--Scripts-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
