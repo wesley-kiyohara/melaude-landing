@@ -23,7 +23,11 @@
     var viewportHeight = $(window).height();
     $('#section-2 div.container').css({'min-height': viewportHeight});
     //initialze skrollr.js
-    var s = skrollr.init();
+    if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+        skrollr.init({
+            forceHeight: false
+        });
+    }
 
     var message1 = 1;
     var message2 = 1;
