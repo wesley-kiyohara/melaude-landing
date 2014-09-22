@@ -352,10 +352,10 @@ a.bottom-links:hover{
         height: 100%;
     }
     section.page-header{
-    background-attachment: static;
+        background-attachment: relative;
     }
     .melaude-header{
-        position: static;
+        position: relative;
     }
 }
 
