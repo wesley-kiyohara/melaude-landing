@@ -420,7 +420,7 @@ a.bottom-links:hover{
     }
     #message1, #message2{
         border: none;
-        bottom: -40;
+        bottom: -40px;
     }
     #message1{
         animation: fadein1 10s normal infinite;
