@@ -432,5 +432,6 @@ a.bottom-links:hover{
 @media only screen and (max-width: 410px){
     #message1, #message2{
         border: none;
+        bottom: 0;
     }
 }
