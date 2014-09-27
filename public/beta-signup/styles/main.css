@@ -361,7 +361,34 @@ a.bottom-links:hover{
         width: 50%;
     }
     #message1, #message2{
-        bottom: 30px;
+        border: none;
+        bottom: -40px;
+    }
+    #message1{
+        animation: fadein1 10s normal infinite;
+        -webkit-animation: fadein1 10s normal infinite;
+        -moz-animation: fadein1 10s normal infinite;
+        -o-animation: fadein1 10s normal infinite;
+    }
+    #message2{
+        animation: fadein2 10s normal infinite;
+        -webkit-animation: fadein2 10s normal infinite;
+        -moz-animation: fadein2 10s normal infinite;
+        -o-animation: fadein2 10s normal infinite;
+    }
+    @-webkit-keyframes fadein1{
+        0%{ opacity: 0; }
+        10%{ opacity: 1; }
+        40%{ opacity: 1; }
+        50%{ opacity: 0; }
+        100%{ opacity: 0; }
+    }
+    @-webkit-keyframes fadein2{
+        0%{ opacity: 0; }
+        50%{ opacity: 0; }
+        60%{ opacity: 1; }
+        90%{ opacity: 1; }
+        100%{ opacity: 0; }
     }
 }
 
@@ -417,35 +444,5 @@ a.bottom-links:hover{
 @media only screen and (max-width: 410px){
     .melaude-header img{
         width: 60%;
-    }
-    #message1, #message2{
-        border: none;
-        bottom: -40px;
-    }
-    #message1{
-        animation: fadein1 10s normal infinite;
-        -webkit-animation: fadein1 10s normal infinite;
-        -moz-animation: fadein1 10s normal infinite;
-        -o-animation: fadein1 10s normal infinite;
-    }
-    #message2{
-        animation: fadein2 10s normal infinite;
-        -webkit-animation: fadein2 10s normal infinite;
-        -moz-animation: fadein2 10s normal infinite;
-        -o-animation: fadein2 10s normal infinite;
-    }
-    @-webkit-keyframes fadein1{
-        0%{ opacity: 0; }
-        10%{ opacity: 1; }
-        40%{ opacity: 1; }
-        50%{ opacity: 0; }
-        100%{ opacity: 0; }
-    }
-    @-webkit-keyframes fadein2{
-        0%{ opacity: 0; }
-        50%{ opacity: 0; }
-        60%{ opacity: 1; }
-        90%{ opacity: 1; }
-        100%{ opacity: 0; }
     }
 }
