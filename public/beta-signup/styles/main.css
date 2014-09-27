@@ -416,7 +416,6 @@ a.bottom-links:hover{
     }
     #message1,#message2{
         left: 0;
-        bottom: 0;
     }
     input{
         padding: 10px 25px 10px 15px
@@ -427,11 +426,6 @@ a.bottom-links:hover{
     }
     button{
         padding: 20px 49px;
-    }
-}
-@media only screen and (max-width: 575px){
-    #message1, #message2{
-        bottom: 30px;
     }
 }
 
