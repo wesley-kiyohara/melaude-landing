@@ -342,9 +342,17 @@ a.bottom-links:hover{
     100%{ opacity: 0; transform: translateY(80px); }
 }
 /*-----media queries-----*/
+@media only screen and (max-width: 1440px){
+    .melaude-header{
+        width: 65%;
+    }
+}
 @media only screen and (max-width: 1200px) {
     div.feature-inner{
         height: 450px;
+    }
+    .melaude-header{
+        width: 85%;
     }
     .melaude-header img{
         width: 30%;
@@ -362,6 +370,13 @@ a.bottom-links:hover{
     }
     .melaude-header{
         position: relative;
+        width: 57%;
+    }
+    .melaude-header img{
+        width: 50%;
+    }
+    #message1, #message2{
+        bottom: 30px;
     }
 }
 
@@ -369,17 +384,17 @@ a.bottom-links:hover{
     div.feature-inner{
         height: 100%;
     }
-    .melaude-header img{
-        width: 35%;
-    }
 }
 @media only screen and (max-width: 640px){
     div.feature-inner{
         height: 100%
     }
+    .melaude-header{
+        width: 100%;
+    }
     .melaude-header img{
         width: 40%;
-        margin: 90px 0 60px 20px;
+        margin: 90px 0 60px 40px;
     }
     .header-content{
         padding: 50px 50px 50px 40px;
@@ -389,15 +404,33 @@ a.bottom-links:hover{
     }
     #message1,#message2{
         left: 0;
-        border: none;
+        bottom: 0;
     }
     input{
         padding: 10px 25px 10px 15px
+    }
+    #first-access{
+        display: inline-block;
+        margin-top: 15px;
+    }
+    button{
+        padding: 20px 49px;
+    }
+}
+@media only screen and (max-width: 575px){
+    #message1, #message2{
+        bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 541px){
     form input{
         margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 410px){
+    #message1, #message2{
+        border: none;
     }
 }
