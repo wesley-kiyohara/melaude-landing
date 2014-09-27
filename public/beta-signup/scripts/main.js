@@ -38,49 +38,10 @@
         error: {}
     };
     //Alternate between different messages
-    //changeMessage1() is called when #message1's animation happens
-    //changeMessage2() is called when #message2's animation happens (3s delay from #message1)
-    var changeMessage1 = function(){
-        if (lastMessage != 1){
-            console.log('trigger1');
-            if (message1 === 0){
-                $('#message1').text('IN YOUR NEIGHBORHOOD');
-                message1 = 1;
-            }
-            else if (message1 === 1){
-                $('#message1').text('AROUND THE WORLD');
-                message1 = 2;
-            }else{
-                $('#message1').text('ACROSS THE COUNTRY');
-                message1 = 0;
-            }
-            lastMessage = 1;
-        }
-    };
-    var changeMessage2 = function(){
-        if (lastMessage != 2){
-            console.log('trigger2');
-            if (message2 === 0){
-                $('#message2').text('ACROSS THE COUNTRY');
-                message2 = 1;
-            }
-            else if (message2 === 1){
-                $('#message2').text('IN YOUR NEIGHBORHOOD');
-                message2 = 2;
-            }else{
-                $('#message2').text('AROUND THE WORLD');
-                message2 = 0;
-            }
-            lastMessage = 2;
-        }
-    };
     //Call changeMessage1() or changeMessage2() when a CSS animation happens to keep CSS and JS synched
-    //$('#message1').on('animationiteration webkitAnimationIteration oanimationiteration MSAnimationIteration', changeMessage1);
-    //$('#message2').on('animationiteration webkitAnimationIteration oanimationiteration MSAnimationIteration', changeMessage2);
     $('.message-wrapper').on('webkitAnimationIteration', function(event){
         if (event.originalEvent.animationName === 'fadein1'){
             if (lastMessage != 1){
-                console.log('trigger1');
                 if (message1 === 0){
                     $('#message1').text('IN YOUR NEIGHBORHOOD');
                     message1 = 1;
@@ -96,7 +57,6 @@
             }
         }else{
             if (lastMessage != 2){
-                console.log('trigger2');
                 if (message2 === 0){
                     $('#message2').text('ACROSS THE COUNTRY');
                     message2 = 1;
