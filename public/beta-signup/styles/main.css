@@ -243,12 +243,12 @@ a.bottom-links:hover{
     border-color: #f75e5e;
 }
 
-.has-error #leadEmailError {
-    visibility: visible;
+.has-error .lead-error{
     color: #f75e5e;
     font-weight: 700;
     margin-top: 5px;
 }
+
 #message1{
     animation: fadein1 8s normal infinite;
     -webkit-animation: fadein1 8s normal infinite;

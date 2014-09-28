@@ -27,16 +27,22 @@ module.exports = function(app) {
 
                 // Save new lead into database.
                 lead.save(function(err) {
-                    if (err) { res.send(err); }
 
-                    // Send a response message that the lead was successfully created.
-                    res.json({ success: true });
-                })
+                    if (err) {
+                        res.status(400).json([err]);
+                    }
+                    else {
+
+                         // Send a response message that the lead was successfully created. Needs to be
+                         // valid JSON for ajax request to succeed.
+                        res.status(200).json({ status: 'ok' });
+                    }
+                });
             }
             else {
 
                 // Send a response of all errors.
-                res.json({ errors: errors });
+                res.status(400).json(errors);
             }
         });
 

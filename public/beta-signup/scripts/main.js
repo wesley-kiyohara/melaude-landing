@@ -78,26 +78,40 @@
      * @param  {Object} result Contains an "errors" property if email is invalid.
      * @return {undefined}
      */
-    callbacks.success.leadFormSubmit = function(result) {
-        var errors = result.errors;
+    callbacks.success.leadFormSubmit = function() {
 
-        // Errors are listed in an array.
-        if (Array.isArray(errors) && errors.length > 0) {
+        // No errors are present and the submission was a success.
+        $('#leadForm').removeClass('has-error');
+        $('.header-content > .success-content').removeClass('hide');
+        $('.header-content > .input-content').addClass('hide');
+    };
+
+    callbacks.error.leadFormSubmit = function(response, textStatus, error) {
+        var errors = response.responseJSON;
+
+        if (Array.isArray(errors)) {
 
             // TODO Display the "msg" property of the error objects.
             // NOTE There will, for now, only be one error object in the array (email).
             errors.forEach(function(val) {
-                if (val.param === 'email') {
-                    $('#leadForm').addClass('has-error');
-                }
-            });
-        }
-        else if (result.success) {
 
-            // No errors are present and the submission was a success.
-            $('#leadForm').removeClass('has-error');
-            $('.header-content > .success-content').removeClass('hide');
-            $('.header-content > .input-content').addClass('hide');
+                // Email invalid error.
+                if (val.param === 'email') {
+                    $('#invalidEmailError').removeClass('hidden');
+                }
+
+                // Duplicate email error.
+                else if (val.code === 11000) {
+                    $('#duplicateEmailError').removeClass('hidden');
+                }
+
+                // Default error.
+                else {
+                    $('#defaultError').removeClass('hidden');
+                }
+
+                $('#leadForm').addClass('has-error');
+            });
         }
     };
 
@@ -109,6 +123,10 @@
         // Prevent form from submitting data or else it will cause a full page reload.
         e.preventDefault();
 
+        // Reset errors at every request.
+        $('#leadForm').removeClass('has-error');
+        $('.lead-error').addClass('hidden');
+
         // Async request to save lead data. Passes data in the body of the request.
         $.ajax({
             type: 'POST',
@@ -118,7 +136,8 @@
             data: JSON.stringify({
                 email: $('#leadEmail').val()
             }),
-            success: callbacks.success.leadFormSubmit
+            success: callbacks.success.leadFormSubmit,
+            error: callbacks.error.leadFormSubmit
         });
     })
 

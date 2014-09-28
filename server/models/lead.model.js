@@ -8,7 +8,8 @@ var mongoose = require('mongoose'),
 var LeadSchema = new Schema({
     email: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     updated: {
     	type: Date,

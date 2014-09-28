@@ -60,10 +60,12 @@
                         </h2>
                         <span id="first-access">get first access to the beta launch</span>
                         <div>
-                            <form id="leadForm" method="POST" action="/lead" novalidate>
+                            <form id="leadForm" novalidate>
                                 <input id="leadEmail" type="email" name="email" placeholder="your@email.com"/>
                                 <button class="fade-in-out" type="submit">JOIN THE LIST</button>
-                                <p id="leadEmailError" class="invisible">please enter a valid email address</p>
+                                <p id="invalidEmailError" class="hidden lead-error">please enter a valid email address</p>
+                                <p id="duplicateEmailError" class="hidden lead-error">it looks like that email's already on our beta list</p>
+                                <p id="defaultError" class="hidden lead-error">an error has happened to your request</p>
                             </form>
                         </div>
                     </div>
