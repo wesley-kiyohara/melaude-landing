@@ -86,7 +86,12 @@
         $('.header-content > .input-content').addClass('hide');
     };
 
-    callbacks.error.leadFormSubmit = function(response, textStatus, error) {
+    /**
+     * Error callback for submitting emails for leads. Possible errors are:
+     * 1) Invalid email string
+     * 2) Email already exists
+     */
+    callbacks.error.leadFormSubmit = function(response) {
         var errors = response.responseJSON;
 
         if (Array.isArray(errors)) {
