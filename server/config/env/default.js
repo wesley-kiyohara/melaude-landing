@@ -6,7 +6,11 @@ var rootPath = path.normalize(__dirname + '/../../..');
 module.exports = {
     root: rootPath,
     port: process.env.PORT || 3000,
-    hostname: process.env.HOST || process.env.HOSTNAME
+    hostname: process.env.HOST || process.env.HOSTNAME,
+    mailchimp: {
+        apiKey: '52b2db3ff7056b2ec6c43e989bc1efde-us9',
+        listId: 'dab7b3ce07'
+    }
 };
 
 switch (process.env.NODE_ENV) {
