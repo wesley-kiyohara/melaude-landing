@@ -8,7 +8,8 @@
     "mongoose": "latest",
     "body-parser": "latest",
     "lodash": "latest",
-    "express-validator": "latest"
+    "express-validator": "latest",
+    "request": "latest"
   },
   "devDependencies": {
   },
