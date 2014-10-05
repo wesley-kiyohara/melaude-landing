@@ -26,7 +26,9 @@ function subscribe(email, callback) {
             id: config.mailchimp.listId,
             email: {
                 email: email
-            }
+            },
+            double_optin: false,
+            send_welcome: true
         }
     }, callback);
 }
